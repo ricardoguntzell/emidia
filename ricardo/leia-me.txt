@@ -1,0 +1,24 @@
+Comandos Utilizados para o Auth do Laravel.
+
+---- php artisan key:generate
+	
+---- php artisan migrate
+
+------------------------------//--------
+
+SQL - Mysql
+
+/*Database*/
+ CREATE DATABASE emidia;
+ USE emidia;
+
+CREATE TABLE Recipes (
+    id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+    title VARCHAR(255) NULL,
+    name_url VARCHAR(255) NULL,
+    ingredient TEXT NULL,
+    method_of_preparation TEXT NULL,
+    creation_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP (),
+    modification_date TIMESTAMP NULL,
+    PRIMARY KEY (id)
+);
